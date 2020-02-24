@@ -5,7 +5,6 @@ python:
 
 install:
   - pip install requests
-  - pip install json
 
 script:
   - python -m unittest test_Homework04a.py
