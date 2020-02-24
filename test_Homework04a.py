@@ -13,8 +13,6 @@ from Homework04a import gitHub_API
 
 class TestgitHub_API(unittest.TestCase):
     def testGithub(self):
-        self.assertEqual(gitHub_API('?'), False)
-    def testGithub2(self):
         self.assertEqual(gitHub_API('FastCashHash'), True)
 
 if __name__ == "__main__":
