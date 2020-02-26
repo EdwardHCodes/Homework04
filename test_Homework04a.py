@@ -6,15 +6,16 @@ Created on Tue Feb 18 19:25:32 2020
 Script to test GitHubApi script.
 """
 
-
-from unittest import mock
+from nose.tools import assert_true
+import unittest
+import mock
 
 from Homework04a import gitHub_API
 
-class TestgitHub_API(mock.TestCase):
+class TestgitHub_API(unittest.TestCase):
     def testGithub(self):
         self.assertEqual(gitHub_API('FastCashHash'), True)
 
 if __name__ == "__main__":
     print('Running unit tests')
-    mock.main() 
+    unittest.main() 
